@@ -50,10 +50,17 @@
         <img id="myImage" src="lampu1.png" width="300" height="300">
         <br>
         <br>
-        <p>
-            <button class="btn btn-secondary" type="button" onclick="light(0)">OFF</button>
-            <button class="btn btn-secondary" type="button" onclick="light(1)">ON</button>
-        </p>
+
+        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+            <input type="radio" onclick="light(0)" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+            <label class="btn btn-outline-primary" for="btnradio1">OFF</label>
+
+            <input type="radio" onclick="light(1)" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btnradio2">ON</label>
+        </div>
+
+        <br><br>
+
         <p><i class="far fa-hand-point-right"></i> Klik Tombol ON atau OFF</p>
 
     </div>
