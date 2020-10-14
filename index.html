@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+    <title>LAMPU ON/OFF</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: #000;
+            color: white;
+            text-align: center;
+        }
+        
+        .btn-warning {
+            width: 80px;
+            height: 150px;
+            font-size: 30px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1>LAMPU ON/OFF</h1>
+
+
+        <script>
+            function light(sw) {
+                var pic;
+                if (sw == 0) {
+                    pic = "lampu1.png"
+                } else {
+                    pic = "lampu2.png"
+                }
+                document.getElementById('myImage').src = pic;
+            }
+        </script>
+
+        <img id="myImage" src="lampu1.png" width="500" height="500">
+        <br>
+        <br>
+        <p>
+            <button class="btn btn-warning" type="button" onclick="light(0)">OFF</button>
+            <button class="btn btn-warning" type="button" onclick="light(1)">ON</button>
+        </p>
+        <p><i class="far fa-hand-point-right"></i> Klik Tombol ON atau OFF</p>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</body>
+
+</html>
