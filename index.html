@@ -14,6 +14,8 @@
         }
         
         body {
+            display: grid;
+            place-items: center;
             background: #000;
             color: white;
             text-align: center;
@@ -29,9 +31,8 @@
 </head>
 
 <body>
-    <div class="container mt-5">
+    <div class="container-fluid mt-5">
         <h1>LAMPU ON/OFF</h1>
-
 
         <script>
             function light(sw) {
@@ -53,6 +54,7 @@
             <button class="btn btn-warning" type="button" onclick="light(1)">ON</button>
         </p>
         <p><i class="far fa-hand-point-right"></i> Klik Tombol ON atau OFF</p>
+
     </div>
 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
