@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IMG-EFEK</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+    <!-- css -->
+    <style>
+        body {
+            background: #eee;
+        }
+        
+        .single-portfolio {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .portfolio-img {
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+            -ms-transition: all .5s;
+            -o-transition: all .5s;
+            transition: all .5s;
+        }
+        
+        .portfolio-text {
+            position: absolute;
+            bottom: 0;
+            padding: 10px;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            -webkit-transition: translateY(100%);
+            -moz-transition: translateY(100%);
+            -ms-transition: translateY(100%);
+            -o-transition: translateY(100%);
+            transition: translateY(100%);
+            -webkit-transition: all .5s ease-in-out;
+            -moz-transition: all .5s ease-in-out;
+            -ms-transition: all .5s ease-in-out;
+            -o-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
+        }
+        
+        .portfolio-text p {
+            text-align: justify;
+        }
+        
+        .single-portfolio:hover .portfolio-text {
+            -webkit-transition: translateY(0);
+            -moz-transition: translateY(0);
+            -ms-transition: translateY(0);
+            -o-transition: translateY(0);
+            transition: translateY(0);
+        }
+        
+        .single-portfolio:hover .portfolio-img {
+            -webkit-transition: scale(1.15);
+            -moz-transition: scale(1.15);
+            -ms-transition: scale(1.15);
+            -o-transition: scale(1.15);
+            transition: scale(1.15);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="portfolio-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="single-portfolio">
+                        <img src="lampu1.png" alt="lampu1.png">
+                        <div class="portfolio-text">
+                            <h3>Lorem, ipsum.</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="single-portfolio">
+                        <img src="lampu2.png" alt="lampu1.png">
+                        <div class="portfolio-text">
+                            <h3>Lorem, ipsum.</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="single-portfolio">
+                        <img src="lampu1.png" alt="lampu1.png">
+                        <div class="portfolio-text">
+                            <h3>Lorem, ipsum.</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- script -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
+</body>
+
+</html>
